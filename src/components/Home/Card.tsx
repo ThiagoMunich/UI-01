@@ -1,20 +1,8 @@
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  TouchableOpacityProps,
-} from "react-native"
+import { View, Text, Image, TouchableOpacity } from "react-native"
 
 import { AntDesign } from "@expo/vector-icons"
+import { CourseProps } from "../../../@types/Courses"
 
-interface CardProps extends TouchableOpacityProps {
-  icon: any
-  price: number
-  course: string
-  rating: number
-  numberOfReviews: number
-}
 export function Card({
   icon,
   price,
@@ -22,7 +10,7 @@ export function Card({
   rating,
   numberOfReviews,
   ...rest
-}: CardProps) {
+}: CourseProps) {
   return (
     <TouchableOpacity
       {...rest}

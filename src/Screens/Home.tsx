@@ -55,16 +55,16 @@ export function Home() {
         <Text className="text-ui-200">See all</Text>
       </View>
 
-      <View className="flex-row gap-y-4 justify-between flex-wrap ">
+      <View className="flex-row justify-between gap-y-4 flex-wrap ">
         {coursesData.map((course) => (
           <Card
-            icon={course.icon}
-            onPress={() => navigation.navigate("details", { course: course })}
             key={course.id}
+            icon={course.icon}
             price={course.price}
             course={course.course}
             rating={course.rating}
             numberOfReviews={course.numberOfReviews}
+            onPress={() => navigation.navigate("details", { course: course })}
           />
         ))}
       </View>
