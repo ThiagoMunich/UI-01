@@ -1,20 +1,46 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import "react-native-gesture-handler"
+
+import { StatusBar } from "expo-status-bar"
+import { SafeAreaView, Text, View } from "react-native"
+
+import { Routes } from "./src/routes"
+import { DarkTheme, NavigationContainer } from "@react-navigation/native"
+
+const coursesData = [
+  {
+    id: 0,
+    course: "Mathematics",
+    price: 10,
+    rating: 4.9,
+    numberOfReviews: 689,
+  },
+  {
+    id: 1,
+    course: "Chemistry",
+    price: 14,
+    rating: 4.8,
+    numberOfReviews: 464,
+  },
+  {
+    id: 2,
+    course: "Chemistry",
+    price: 14,
+    rating: 4.8,
+    numberOfReviews: 464,
+  },
+  {
+    id: 3,
+    course: "Chemistry",
+    price: 14,
+    rating: 4.8,
+    numberOfReviews: 464,
+  },
+]
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
