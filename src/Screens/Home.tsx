@@ -49,7 +49,7 @@ export function Home() {
   const navigation = useNavigation()
 
   return (
-    <SafeAreaView className="flex-1 bg-ui-400 px-5 pt-14 pb-4">
+    <View className="flex-1 bg-ui-400 px-5 pt-14 pb-4">
       <Header />
 
       <Banner className="mt-5" />
@@ -72,6 +72,6 @@ export function Home() {
           />
         ))}
       </View>
-    </SafeAreaView>
+    </View>
   )
 }
