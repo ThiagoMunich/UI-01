@@ -14,6 +14,7 @@ const coursesData = [
     price: 10,
     rating: 4.9,
     numberOfReviews: 689,
+    lottie: require("../../assets/lotties/math.json"),
   },
   {
     id: 1,
@@ -22,6 +23,7 @@ const coursesData = [
     price: 14,
     rating: 4.8,
     numberOfReviews: 464,
+    lottie: require("../../assets/lotties/chemistry.json"),
   },
   {
     id: 2,
@@ -30,6 +32,7 @@ const coursesData = [
     price: 16,
     rating: 4.9,
     numberOfReviews: 769,
+    lottie: require("../../assets/lotties/biology.json"),
   },
   {
     id: 3,
@@ -38,6 +41,7 @@ const coursesData = [
     price: 16,
     rating: 4.9,
     numberOfReviews: 834,
+    lottie: require("../../assets/lotties/language.json"),
   },
 ]
 
@@ -55,7 +59,7 @@ export function Home() {
         <Text className="text-ui-200">See all</Text>
       </View>
 
-      <View className="flex-row justify-between gap-y-4 flex-wrap ">
+      <View className="flex-row justify-between gap-y-4 flex-wrap">
         {coursesData.map((course) => (
           <Card
             key={course.id}
