@@ -29,7 +29,7 @@ export function SubHeader({
         </View>
       </View>
 
-      <View className="flex items-center justify-center rounded-2xl bg-ui-100 h-16 w-16">
+      <View className="flex items-center justify-center rounded-xl bg-ui-100 h-16 w-16">
         <Text className="text-ui-400 text-xs font-semibold">Fee</Text>
 
         <Text className="text-ui-400 font-bold text-xl">${price}</Text>

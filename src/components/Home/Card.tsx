@@ -15,7 +15,7 @@ export function Card({
     <TouchableOpacity
       {...rest}
       activeOpacity={0.8}
-      className="bg-ui-300 flex items-center rounded-xl py-3 w-40 overflow-hidden"
+      className="bg-ui-300 flex items-center rounded-xl py-3 w-[168px] overflow-hidden"
     >
       <Image className="w-16 h-16 mb-2" source={icon} />
       <Text className="text-ui-200 font-bold text-base">{course}</Text>

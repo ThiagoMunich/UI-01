@@ -27,7 +27,7 @@ const cardsData = [
 export function CourseDetails() {
   const { params } = useRoute()
   return (
-    <View className="flex-1 bg-ui-400 px-5 pt-14 pb-4">
+    <View className="flex-1 bg-ui-400">
       <Header />
 
       <SubHeader
